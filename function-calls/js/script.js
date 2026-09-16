@@ -13,6 +13,7 @@
 */
 function setup() {
 createCanvas(500, 500); //creating a canvas to draw on
+colorMode(HSB);
 }
 
 
@@ -21,8 +22,11 @@ createCanvas(500, 500); //creating a canvas to draw on
 */
 function draw() {
 background(0);//background is white 
-fill(255);
+fill(20, 100, 200);
 noStroke();
-rect(width, height, 100, 300);//draws a rectangle in middle of screen 
+rectMode(CENTER);
+square(width/2, height/2, 100);//draw square in middle of screen
+fill(50, 50, 200);
+rect(100, 200, 50, 200);
 
 }
