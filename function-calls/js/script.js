@@ -21,7 +21,8 @@ createCanvas(500, 500); //creating a canvas to draw on
 */
 function draw() {
 background(0);//background is white 
-rect(width, height, 100, 300);//draws a rectangle in middle of screen 
 fill(255);
 noStroke();
+rect(width, height, 100, 300);//draws a rectangle in middle of screen 
+
 }
