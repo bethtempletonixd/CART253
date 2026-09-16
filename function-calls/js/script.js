@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-createCanvas(400, 400); //creating a canvas to draw on
+createCanvas(500, 500); //creating a canvas to draw on
 }
 
 
@@ -20,6 +20,8 @@ createCanvas(400, 400); //creating a canvas to draw on
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-background(255);//background is white 
-rect(width/2, height/2, 100, 300);//draws a rectangle in middle of screen 
+background(0);//background is white 
+rect(width, height, 100, 300);//draws a rectangle in middle of screen 
+fill(255);
+noStroke();
 }
