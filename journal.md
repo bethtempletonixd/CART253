@@ -1,1 +1,4 @@
-this is my journal 
+# Reflective Journal
+## Prototyping: Website 
+
+While setting up and making my GitHub repository and website for my course, I came across quite a few challenges. This was my first time working with GitHub and VS Code. I felt very overwhelmed and confused at first, but I just took each thing step by step and read over the class notes thoroughly, as well as looking at the terminology for using Markdown to create my website. I asked Sabine for help to go through how to link my journal to my GitHub pages. Once I understood how to link folders and some more of the terminology, I felt more at ease with the whole workflow of using VS Code and GitHub to document my work. After getting the base of my website set up, I think I will find it easier to add more images and links to it to expand it and treat it as a portfolio for my CART253 class at the end of the semester to show my peers and tutors back at my home University at the Glasgow School of Art. 
