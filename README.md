@@ -3,4 +3,4 @@
 
 Website to show my work from my CART253 course. 
 
-My favorite search engine is [Journal](./journal.md)
+Link to my Reflective Journal [Journal](./journal.md)

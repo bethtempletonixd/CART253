@@ -22,6 +22,7 @@ colorMode(HSB);
 */
 function draw() {
 background(220, 60, 100);
+//drawing all the shapes
 drawGround();
 drawHouse();
 drawSun();
