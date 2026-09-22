@@ -8,7 +8,7 @@ noLoop();
 
 function draw() {
 //background(0);
-for (let i = 0; i < 100; i++){
+for (let i = 0; i < 150; i++){
     fill(255);
 rect(random(width), random(height), 10, 30);
 }
