@@ -10,9 +10,11 @@ Link to my [Reflective Journal](./journal.md)
 
 ![Prototype01](./images/instructions-prototype1.png)
 
+
 [Prototype02](./prototypes/instructions-prototype2)
 
 ![Prototype02](./images/instructions-prototype2.png)
+
 
 [Prototype03](./prototypes/instructions-prototype3/template-p5-project)
 
