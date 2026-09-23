@@ -6,7 +6,7 @@ Website to show my work from my CART253 course.
 Link to my [Reflective Journal](./journal.md)
 
 ### Prototyping-instructions
-[Prototype01](./prototypes/instructions-prototype1)(./prototypes/instructions-prototype1/js/script.js)
+[Prototype01](./prototypes/instructions-prototype1)
 
 ![Prototype01](./images/instructions-prototype1.png)
 
