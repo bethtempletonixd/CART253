@@ -62,9 +62,9 @@ function draw() {
   mrFurious.fill.b = mrFurious.fill.b-0.5;
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   //make mr furious shake
-  mrFurious.x = mrFurious.x + random(-5, 5);
+  mrFurious.x = mrFurious.x + random(-20, 20);
   mrFurious.x = constrain(mrFurious.x, 0, 400);
-  mrFurious.y = mrFurious.y + random(-5, 5);
+  mrFurious.y = mrFurious.y + random(-20, 20);
   mrFurious.y = constrain(mrFurious.y, 0, 400);
   pop();
 
