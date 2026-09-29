@@ -10,12 +10,12 @@
 
 
 let box = {
-    x: 250,
-    y: 250,
+    x: 0,
+    y: 0,
     size: 200, 
 
     fill: {
-        h: 300, 
+        h: 360, 
         s: 100,
         b: 100
     } 
@@ -37,8 +37,10 @@ function draw() {
 background(0);
 rectMode(CENTER);
 fill(box.fill.h, box.fill.s, box.fill.b);
-box.fill.h = box.fill.h - 1;
-let angle = frameCount * 0.5;
+box.fill.h = box.fill.h - 1 * 0.5;
+//translate(width/2, height/2);
+let angle = frameCount * 0.005;
+translate(width/2, height/2);
 rotate(angle);
 square(box.x, box.y, box.size);
 }
