@@ -2,13 +2,12 @@
  * Variables prototype 02
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Square rotates in the centre of the screen changing colour from 
+ * red to green as it rotates. 
  */
 
-"use strict";
 
-
+//box position, size and colour
 let box = {
     x: 0,
     y: 0,
@@ -21,17 +20,14 @@ let box = {
     } 
 }
 
-//let angle = frameCount * 0.5;
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+
 function setup() {
 createCanvas(500, 500);
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * red square rotating in centre of screen changes to green
 */
 function draw() {
 background(0);
