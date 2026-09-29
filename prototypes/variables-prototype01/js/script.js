@@ -2,8 +2,10 @@
  * Variables protoype 01
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * 4 Balls falling from the top of the canvas to the bottom stopping 
+ * at the bottom. Each ball is a different colour and falls at different
+ * speeds. The balls have a blur filter applied to them which makes 
+ * them leave a trail behind them. 
  */
 
 "use strict";
@@ -14,7 +16,7 @@ let ball01 = {
     y:0,
     size:50,
     fill: {
-        h:200,
+        h:200,//blue
         s:100,
         b:100
     }
@@ -26,7 +28,7 @@ let ball02 = {
     y:0,
     size:100,
     fill: {
-        h:350,
+        h:350,//red
         s:100,
         b:100
     }
@@ -38,11 +40,24 @@ let ball03 = {
     y:0,
     size:200,
     fill: {
-        h:50,
+        h:50,//yellow
         s:100,
         b:100
     }
 }
+
+//variables for ball04 size, position & colour
+let ball04 = {
+    x:450,
+    y:0,
+    size:30,
+    fill: {
+        h:100,//green
+        s:100,
+        b:100
+    }
+}
+
 /**
  * Draw canvas and change colour mode to use HSB colours
 */
@@ -88,5 +103,15 @@ ellipseMode(CENTER);
 circle(ball03.x, ball03.y, ball03.size);
 ball03.y = constrain(ball03.y, 0, 500);
 ball03.y = ball03.y + 0.25;
+pop();
+
+//draw ball04
+push();
+noStroke();
+fill(ball04.fill.h, ball04.fill.s, ball04.fill.b);
+ellipseMode(CENTER);
+circle(ball04.x, ball04.y, ball04.size);
+ball04.y = constrain(ball04.y, 0, 500);
+ball04.y = ball04.y + 0.75;
 pop();
 }
