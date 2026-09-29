@@ -21,7 +21,7 @@ let box = {
     } 
 }
 
-let angle = frameCount * 0.5;
+//let angle = frameCount * 0.5;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -38,6 +38,7 @@ background(0);
 rectMode(CENTER);
 fill(box.fill.h, box.fill.s, box.fill.b);
 box.fill.h = box.fill.h - 1;
+let angle = frameCount * 0.5;
 rotate(angle);
 square(box.x, box.y, box.size);
 }
