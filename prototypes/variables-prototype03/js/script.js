@@ -2,8 +2,8 @@
  * Variables prototype 03
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Circle in the centre of the canvas that changes colour depenging
+ * on mouse position on x and y axis. 
  */
 
 let orb = {
@@ -13,7 +13,7 @@ let orb = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Draws canvas at 500 x 500 pixels and change colour mode to draw in HSB
 */
 function setup() {
 createCanvas(500, 500);
@@ -22,14 +22,17 @@ colorMode(HSB);
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Circle changes hue, saturation & brightness depending on mouse position.
 */
 function draw() {
 background(0);
 
-let c = map(mouseX, 0, 500, 0, 360);
+//controls hue, saturation & brightness with mouse position 
+let h = map(mouseX, 0, 500, 0, 360);
+let s = map(mouseY, 0, 500, 0, 100);
+let b = map(mouseX, mouseY, 0, 500, 0, 100); 
 
 noStroke();
-fill(c, 100, 100);
+fill(h, s, b);
 circle(orb.x, orb.y, orb.size);
 }
