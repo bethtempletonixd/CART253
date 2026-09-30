@@ -1,18 +1,22 @@
 /**
- * Title of Project
- * Author Name
+ * Variables prototype 03
+ * Beth Templeton 
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
-"use strict";
+let orb = {
+    x: 250,
+    y: 250,
+    size: 300
+}
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-createCanvas(255);
+createCanvas(500, 500);
 }
 
 
@@ -21,5 +25,5 @@ createCanvas(255);
 */
 function draw() {
 background(255);
-rect(200, 200, 100, 300);
+circle(orb.x, orb.y, orb.size);
 }
