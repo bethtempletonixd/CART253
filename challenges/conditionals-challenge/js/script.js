@@ -1,12 +1,11 @@
 /**
- * Title of Project
- * Author Name
+ * Conditionals-challenge
+ * Beth Templeton
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
-"use strict";
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
