@@ -17,6 +17,7 @@ let orb = {
 */
 function setup() {
 createCanvas(500, 500);
+colorMode(HSB);
 }
 
 
@@ -24,6 +25,11 @@ createCanvas(500, 500);
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-background(255);
+background(0);
+
+let c = map(mouseX, 0, 500, 0, 255);
+
+noStroke();
+fill(c);
 circle(orb.x, orb.y, orb.size);
 }
