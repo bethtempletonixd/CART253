@@ -27,9 +27,9 @@ colorMode(HSB);
 function draw() {
 background(0);
 
-let c = map(mouseX, 0, 500, 0, 255);
+let c = map(mouseX, 0, 500, 0, 360);
 
 noStroke();
-fill(c);
+fill(c, 100, 100);
 circle(orb.x, orb.y, orb.size);
 }
