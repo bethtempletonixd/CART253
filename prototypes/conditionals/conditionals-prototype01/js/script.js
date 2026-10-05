@@ -8,8 +8,8 @@
 
 //variables for square size, position and fill
 let square = {
-    x: 250,
-    y: 250,
+    x: 0,
+    y: 0,
     size: 200,
     fillStates: {
         hit: "#FF0000",
@@ -36,18 +36,20 @@ function draw() {
 }
 //draw square
 function drawSquare(){
+    push();
     fill(square.currentFill);
-   // noStroke();
+    noStroke();
     rectMode(CENTER);
     let angle = frameCount * 0.005;
     translate(width/2, height/2);
     rotate(angle);
     rect(square.x, square.y, square.size);
+    pop();
 }
 //change square fill from yellow to red with mouse position
 function squareFill() {
     let distance = dist(mouseX, mouseY, square.x, square.y);
-    if(distance < square.size/2){
+    if(distance < square.size){
         square.currentFill = square.fillStates.hit;
     }
     else{
