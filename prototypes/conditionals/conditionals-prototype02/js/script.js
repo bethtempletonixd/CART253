@@ -30,14 +30,23 @@ function setup() {
 */
 function draw() {
     background(255);
+    colourChange();
     drawBall();
 }
 
 function drawBall() {
+    noStroke();
     fill(ball.currentFill);
     circle(ball.x, ball.y, ball.size);
 }
 
 function colourChange() {
+    let distance = dist(ball.x, ball.y, mouseX, mouseY);
 
+    if(distance < ball.size/2 && mouseIsPressed){
+        ball.currentFill = ball.fillStates.pressed;
+    }
+    else{
+        ball.currentFill = ball.fillStates.notPressed;
+    }
 }
