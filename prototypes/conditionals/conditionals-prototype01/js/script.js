@@ -8,8 +8,8 @@
 
 //variables for square size, position and fill
 let square = {
-    x: 0,
-    y: 0,
+    x: 250,
+    y: 250,
     size: 200,
     fillStates: {
         hit: "#FF0000",
@@ -27,29 +27,26 @@ function setup() {
 
 
 /**
- * change colour of square from yed to yellow depending if mouse is inside the shape
+ * change colour of square from red to yellow depending if mouse is inside the shape
 */
 function draw() {
     background(255);
-    drawSquare();
     squareFill();
+    drawSquare();
 }
 //draw square
 function drawSquare(){
-    push();
+    //push();
     fill(square.currentFill);
     noStroke();
     rectMode(CENTER);
-    let angle = frameCount * 0.005;
-    translate(width/2, height/2);
-    rotate(angle);
     rect(square.x, square.y, square.size);
-    pop();
+    //pop();
 }
 //change square fill from yellow to red with mouse position
 function squareFill() {
     let distance = dist(mouseX, mouseY, square.x, square.y);
-    if(distance < square.size){
+    if(distance < square.size/2){
         square.currentFill = square.fillStates.hit;
     }
     else{
