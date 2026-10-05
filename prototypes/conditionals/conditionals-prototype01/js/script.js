@@ -1,11 +1,12 @@
 /**
- * Title of Project
+ * Square colour change
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Once mouse is inside the square the colour changes from yellow to red and changes back to yellow
+ * once the mouse is outside the square.
  */
 
+//variables for square size, position and fill
 let square = {
     x: 250,
     y: 250,
@@ -18,7 +19,7 @@ let square = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * draw canvas 500 x 500 pixels
 */
 function setup() {
     createCanvas(500, 500);
@@ -26,21 +27,24 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * change colour of square from yed to yellow depending if mouse is inside the shape
 */
 function draw() {
     background(255);
     drawSquare();
     squareFill();
 }
-
+//draw square
 function drawSquare(){
     fill(square.currentFill);
-    noStroke();
+   // noStroke();
     rectMode(CENTER);
+    let angle = frameCount * 0.005;
+    translate(width/2, height/2);
+    rotate(angle);
     rect(square.x, square.y, square.size);
 }
-
+//change square fill from yellow to red with mouse position
 function squareFill() {
     let distance = dist(mouseX, mouseY, square.x, square.y);
     if(distance < square.size/2){
