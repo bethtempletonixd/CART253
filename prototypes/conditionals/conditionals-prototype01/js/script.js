@@ -43,7 +43,7 @@ function drawSquare(){
 
 function squareFill() {
     let distance = dist(mouseX, mouseY, square.x, square.y);
-    if(distance < square.size){
+    if(distance < square.size/2){
         square.currentFill = square.fillStates.hit;
     }
     else{
