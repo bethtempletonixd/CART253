@@ -40,3 +40,22 @@ Link to my [Reflective Journal](./journal.md)
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/variables-prototype03)
 
 ![Prototype03](./images/variables-prototype03.png)
+
+### Prototyping-conditionals
+[Prototype01](./prototypes/conditionals/conditionals-prototype01)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype01)
+
+![Prototype01](./images/conditionals-prototype01.png)
+
+[Prototype02](./prototypes/conditionals/conditionals-prototype02)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype02)
+
+[Prototype02](./images/conditionals-prototype02.png)
+
+[Prototype03](./prototypes/conditionals/conditionals-prototype03)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype03)
+
+[Prototype03](./images/conditionals-prototype03.png)
