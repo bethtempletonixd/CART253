@@ -50,7 +50,7 @@ function drawSquare(){
 }
 //change square fill from yellow to red with mouse position
 function squareFill() {
-    let distance = dist(mouseX, mouseY, square.x, square.y);
+    let distance = dist(mouseX, mouseY, width/2, height/2);
     if(distance < square.size/2){
         square.currentFill = square.fillStates.hit;
     }
