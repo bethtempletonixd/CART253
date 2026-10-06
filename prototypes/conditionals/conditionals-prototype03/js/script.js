@@ -11,7 +11,7 @@ let creature = {
     y: 250, 
     size: 200,
     eye:{
-        fill: "#e8e4e4",
+        fill: "#ffffff",
         size: 200/3.5,
         centre_x: 250,
         centre_y: 250
@@ -47,5 +47,6 @@ function drawCreature() {
     circle(creature.x, creature.y, creature.size);
     //draw eyes
     fill(creature. eye.fill);
-    circle(creature.eye.centre_x, creature.eye.centre_y, creature.eye.size);
+    circle(creature.eye.centre_x - creature.eye.size, creature.eye.centre_y, creature.eye.size);
+    circle(creature.eye.centre_x + creature.eye.size, creature.eye.centre_y, creature.eye.size);
 }
