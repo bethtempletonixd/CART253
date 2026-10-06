@@ -43,23 +43,39 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    angryCreature();
     drawCreature();
 }
 
+//draw creature
 function drawCreature() {
     //draw yellow circle
     noStroke();
     fill(creature.currentFill);
     circle(creature.x, creature.y, creature.size);
+
     //draw eyes
     fill(creature. eye.fill);
     circle(creature.eye.centre_x - creature.eye.size, creature.eye.centre_y, creature.eye.size);
     circle(creature.eye.centre_x + creature.eye.size, creature.eye.centre_y, creature.eye.size);
+    //centre of eyes
     fill(creature.eye.eyeCentre.currentFill);
     circle(creature.eye.eyeCentre.centre_x - creature.eye.size, creature.eye.eyeCentre.centre_y, creature.eye.eyeCentre.size);
     circle(creature.eye.eyeCentre.centre_x + creature.eye.size, creature.eye.eyeCentre.centre_y, creature.eye.eyeCentre.size);
+
     //draw mouth
     stroke(0);
     strokeWeight(2);
     line(220, 300, 280, 300);
+}
+
+function angryCreature() {
+    let distance = dist(creature.x, creature.y, mouseX, mouseY);
+
+    if(distance < creature.size/2 && mouseIsPressed){
+        creature.currentFill = creature.creatureFillStates.angry;
+    }
+    else{
+        creature.currentFill = creature.creatureFillStates.neutral;
+    }
 }
