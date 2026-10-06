@@ -1,11 +1,12 @@
 /**
- * Title of Project
+ * Ball colour change
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Circle that changes fill colour and stroke colour once mouse is pressed while inside the circle. 
+ * Changes colour from pink to purple with a black stroke.
  */
 
+//Variables to control ball size, position, fill colour and stroke colour
 let ball = {
     x: 250,
     y: 250,
@@ -23,7 +24,7 @@ let ball = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Draw canvas at 500 by 500 pixels.
 */
 function setup() {
     createCanvas(500, 500);
@@ -31,14 +32,15 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draw pink circle in centre of canvas that changes colour to purple and adds a black stroke 
+ * once pressed with the mouse. 
 */
 function draw() {
     background(255);
     colourChange();
     drawBall();
 }
-
+//Draw ball
 function drawBall() {
     noStroke();
     fill(ball.currentFill);
@@ -46,7 +48,7 @@ function drawBall() {
     strokeWeight(3);
     circle(ball.x, ball.y, ball.size);
 }
-
+//Control colour change 
 function colourChange() {
     let distance = dist(ball.x, ball.y, mouseX, mouseY);
 
