@@ -14,9 +14,15 @@ let creature = {
         fill: "#ffffff",
         size: 200/3.5,
         centre_x: 250,
-        centre_y: 250
+        centre_y: 250,
+    eyeCentre: {
+        centre_x: 250,
+        centre_y: 250,
+        size: 200/5,
+        currentFill: "#000000"
+    }
     },
-    fillStates:{
+    creatureFillStates:{
         happy: "#f802aa",
         sad: "#343ae7",
         angry: "#f20b0b",
@@ -49,6 +55,9 @@ function drawCreature() {
     fill(creature. eye.fill);
     circle(creature.eye.centre_x - creature.eye.size, creature.eye.centre_y, creature.eye.size);
     circle(creature.eye.centre_x + creature.eye.size, creature.eye.centre_y, creature.eye.size);
+    fill(creature.eye.eyeCentre.currentFill);
+    circle(creature.eye.eyeCentre.centre_x - creature.eye.size, creature.eye.eyeCentre.centre_y, creature.eye.eyeCentre.size);
+    circle(creature.eye.eyeCentre.centre_x + creature.eye.size, creature.eye.eyeCentre.centre_y, creature.eye.eyeCentre.size);
     //draw mouth
     stroke(0);
     strokeWeight(2);
