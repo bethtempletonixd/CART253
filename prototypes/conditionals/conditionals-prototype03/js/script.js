@@ -12,9 +12,9 @@ let creature = {
     size: 200,
     eye:{
         fill: "#e8e4e4",
-        size: 120/3.5,
-        centre_x: 150,
-        centre_y: 150
+        size: 200/3.5,
+        centre_x: 250,
+        centre_y: 250
     },
     fillStates:{
         happy: "#f802aa",
@@ -46,5 +46,6 @@ function drawCreature() {
     fill(creature.currentFill);
     circle(creature.x, creature.y, creature.size);
     //draw eyes
+    fill(creature. eye.fill);
     circle(creature.eye.centre_x, creature.eye.centre_y, creature.eye.size);
 }
