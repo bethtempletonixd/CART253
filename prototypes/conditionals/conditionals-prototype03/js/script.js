@@ -22,9 +22,11 @@ let creature = {
         currentFill: "#000000"
     }
     },
+    eyeFillStates: {
+        neutral: "#000000",
+        angry: "#880404"
+    },
     creatureFillStates:{
-        happy: "#f802aa",
-        sad: "#343ae7",
         angry: "#f20b0b",
         neutral: "#edd70e",
     },
@@ -74,8 +76,10 @@ function angryCreature() {
 
     if(distance < creature.size/2 && mouseIsPressed){
         creature.currentFill = creature.creatureFillStates.angry;
+        creature.eye.eyeCentre.currentFill = creature.eyeFillStates.angry;
     }
     else{
         creature.currentFill = creature.creatureFillStates.neutral;
+        creature.eye.eyeCentre.currentFill = creature.eyeFillStates.neutral;
     }
 }
