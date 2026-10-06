@@ -1,11 +1,12 @@
 /**
- * Title of Project
+ * Angry creature
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Creature that changes colour depending how angry it is. If mouse is inside the circle the colour changes to orange to make him angry, 
+ * if the mouse is pressed once inside the circle the colour will change to red to make him full of rage. 
  */
 
+//variables to control colour, size, position of creature 
 let creature = {
     x: 250,
     y: 250, 
@@ -35,7 +36,7 @@ let creature = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * draw canvas of size 500 by 500 pixels
 */
 function setup() {
     createCanvas(500, 500);
@@ -43,7 +44,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw creature and change the colour depending on mouse position and if it is pressed
 */
 function draw() {
     angryCreature();
@@ -72,6 +73,7 @@ function drawCreature() {
     line(220, 300, 280, 300);
 }
 
+//change colour of creature depending on mouse position and if it is pressed
 function angryCreature() {
     let distance = dist(creature.x, creature.y, mouseX, mouseY);
 
