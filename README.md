@@ -59,11 +59,11 @@ Link to my [Reflective Journal](./journal.md)
 
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype02)
 
-[Prototype02](./images/conditionals-prototype02.png)
+![Prototype02](./images/conditionals-prototype02.png)
 
 
 [Prototype03](./prototypes/conditionals/conditionals-prototype03)
 
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype03)
 
-[Prototype03](./images/conditionals-prototype03.png)
+![Prototype03](./images/conditionals-prototype03.png)
