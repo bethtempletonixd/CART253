@@ -49,4 +49,8 @@ function drawCreature() {
     fill(creature. eye.fill);
     circle(creature.eye.centre_x - creature.eye.size, creature.eye.centre_y, creature.eye.size);
     circle(creature.eye.centre_x + creature.eye.size, creature.eye.centre_y, creature.eye.size);
+    //draw mouth
+    stroke(0);
+    strokeWeight(2);
+    line(220, 300, 280, 300);
 }
