@@ -14,7 +14,12 @@ let ball = {
         pressed: "#a604b8",
         notPressed: "#ff008c"
     },
-    currentFill: "#ff008c"
+    currentFill: "#ff008c",
+    currentStroke: "#ff008c",
+    strokeStates: {
+        pressed: "#000000",
+        notPressed: "#ff008c"
+    }
 }
 
 /**
@@ -37,6 +42,8 @@ function draw() {
 function drawBall() {
     noStroke();
     fill(ball.currentFill);
+    stroke(ball.currentStroke);
+    strokeWeight(3);
     circle(ball.x, ball.y, ball.size);
 }
 
@@ -45,8 +52,11 @@ function colourChange() {
 
     if(distance < ball.size/2 && mouseIsPressed){
         ball.currentFill = ball.fillStates.pressed;
+        ball.currentStroke = ball.strokeStates.pressed;
     }
     else{
         ball.currentFill = ball.fillStates.notPressed;
+        ball.currentStroke = ball.strokeStates.notPressed;
     }
+
 }
