@@ -48,11 +48,13 @@ Link to my [Reflective Journal](./journal.md)
 
 ![Prototype01](./images/conditionals-prototype01.png)
 
+
 [Prototype02](./prototypes/conditionals/conditionals-prototype02)
 
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype02)
 
 [Prototype02](./images/conditionals-prototype02.png)
+
 
 [Prototype03](./prototypes/conditionals/conditionals-prototype03)
 
