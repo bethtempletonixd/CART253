@@ -8,8 +8,8 @@
 
 //variables for square size, position and fill
 let square = {
-    x: 250,
-    y: 250,
+    x: 0,
+    y: 0,
     size: 200,
     fillStates: {
         hit: "#FF0000",
@@ -40,7 +40,12 @@ function drawSquare(){
     fill(square.currentFill);
     noStroke();
     rectMode(CENTER);
+    translate(width/2, height/2);
+     let angle = frameCount * 0.025;
+    rotate(angle);
     rect(square.x, square.y, square.size);
+    // let angle = frameCount * 0.025;
+    // rotate(radians);
     //pop();
 }
 //change square fill from yellow to red with mouse position

@@ -27,7 +27,8 @@ let creature = {
         angry: "#880404"
     },
     creatureFillStates:{
-        angry: "#f20b0b",
+        angry: "#ff8800",
+        rage: "#f20b0b",
         neutral: "#edd70e",
     },
     currentFill: "#edd70e"
@@ -74,8 +75,15 @@ function drawCreature() {
 function angryCreature() {
     let distance = dist(creature.x, creature.y, mouseX, mouseY);
 
-    if(distance < creature.size/2 && mouseIsPressed){
+    if(distance < creature.size/2){
         creature.currentFill = creature.creatureFillStates.angry;
+    }
+    else{
+        creature.currentFill = creature.creatureFillStates.neutral;
+    }
+
+    if(distance < creature.size/2 && mouseIsPressed){
+        creature.currentFill = creature.creatureFillStates.rage;
         creature.eye.eyeCentre.currentFill = creature.eyeFillStates.angry;
     }
     else{
