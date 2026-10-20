@@ -5,7 +5,7 @@
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
-let creature = {
+let pumpkin = {
     x: 250,
     y: 250, 
     size: 200,
@@ -25,7 +25,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-     drawCreature();
+     drawPumpkin();
 }
 
 function mouseMoved() {
@@ -41,10 +41,10 @@ function mouseMoved() {
     
 }
 
-function drawCreature() {
+function drawPumpkin() {
     noStroke();
-        fill(creature.currentFill);
-    circle(creature.x, creature.y, creature.size);
+        fill(pumpkin.currentFill);
+    circle(pumpkin.x, pumpkin.y, pumpkin.size);
     //draw eyes
      fill(0);
      triangle(240, 270, 210, 220, 180, 270);
