@@ -44,7 +44,7 @@ function mouseMoved() {
     fill(255);
     textAlign(CENTER);
     textSize(40);
-    text("BOO!", random(width), random(height));
+    text("BOO!", mouseX, mouseY);
 }
 
 function drawCreature() {
