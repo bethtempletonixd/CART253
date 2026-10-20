@@ -37,7 +37,18 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    fill(creature.currentFill);
+  drawCreature();
+}
+
+function mouseMoved() {
+    fill(255);
+    textAlign(CENTER);
+    textSize(40);
+    text("BOO!", random(width), random(height));
+}
+
+function drawCreature() {
+        fill(creature.currentFill);
     circle(creature.x, creature.y, creature.size);
 
     fill(creature. eye.fill);
@@ -52,11 +63,4 @@ function draw() {
     stroke(0);
     strokeWeight(2);
     line(220, 300, 280, 300);
-}
-
-function mouseMoved() {
-    fill(255);
-    textAlign(CENTER);
-    textSize(40);
-    text("BOO!", width/2, height/2);
 }
