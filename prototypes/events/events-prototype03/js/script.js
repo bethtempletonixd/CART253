@@ -29,7 +29,7 @@ function draw() {
 
 //painter function
 function drawPainter(){
-    if(mousePressed){
+    if(mouseIsPressed){
     noStroke();
     ellipseMode(CENTER);
     fill(random(255), random(255), random(255));
