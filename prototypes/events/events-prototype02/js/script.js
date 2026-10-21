@@ -6,17 +6,14 @@
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
-let mover= {
-    size: 50,
-    x: 50,
-    y: 400
-}
-
+const grid = 50; //how spaced the shapes are
+const inset = 0 + grid/2;//inset from outside of canvas
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(500, 500);
+    background(0);
 }
 
 
@@ -24,16 +21,14 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(0);
-    square(mover.x, mover.y, mover.size);
+    rectMode(CENTER);
+    for (let y = 0; y < 10; y++){//draw y axis of 10 squares
+    for(let x = 0; x < 10; x++){//draw x axis of 10 squares
+    rect(inset + x * grid, inset + y * grid, 10, 10);
+        }
+    }
 }
 
-function keyPressed(event){
-    let move = {
-        x: 0, 
-        y: 0
-    }
-    if(event.keyCode === RIGHT_ARROW){
-        move.x = mover.size;
-    }
+function keyPressed() {
+    fill(random(255), random(255), random(255));
 }
