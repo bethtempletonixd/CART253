@@ -1,10 +1,11 @@
 /**
- * Title of Project
+ * Scary pumpkin
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Move mouse to make scary text appear around the pumpkin. 
  */
+
+//variables for pumpkin size, position and colour
 let pumpkin = {
     x: 250,
     y: 250, 
@@ -13,7 +14,7 @@ let pumpkin = {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * draw canvas and make background black
 */
 function setup() {
     createCanvas(500, 500);
@@ -22,12 +23,13 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw pumpkin on canvas
 */
 function draw() {
      drawPumpkin();
 }
 
+//move mouse to make text appear
 function mouseMoved() {
     if(mouseMoved){
     fill(255);
@@ -41,16 +43,19 @@ function mouseMoved() {
     
 }
 
+//draw pumpkin function 
 function drawPumpkin() {
     noStroke();
         fill(pumpkin.currentFill);
     circle(pumpkin.x, pumpkin.y, pumpkin.size);
     //draw eyes
      fill(0);
-     triangle(240, 270, 210, 220, 180, 270);
-     triangle(260, 270, 290, 220, 320, 270);
+     triangle(240, 260, 210, 210, 180, 260);
+     triangle(260, 260, 290, 210, 320, 260);
      //draw mouth
-    stroke(0);
-    strokeWeight(5);
-    line(220, 300, 280, 300);
+    // stroke(0);
+    // strokeWeight(5);
+    // line(220, 300, 280, 300);
+    rectMode(CENTER);
+    rect(250, 300, 80, 20);
 }
