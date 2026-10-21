@@ -53,9 +53,7 @@ function drawPumpkin() {
      triangle(240, 260, 210, 210, 180, 260);
      triangle(260, 260, 290, 210, 320, 260);
      //draw mouth
-    // stroke(0);
-    // strokeWeight(5);
-    // line(220, 300, 280, 300);
+     fill(0);
     rectMode(CENTER);
     rect(250, 300, 80, 20);
 }
