@@ -67,3 +67,24 @@ Link to my [Reflective Journal](./journal.md)
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/conditionals/conditionals-prototype03)
 
 ![Prototype03](./images/conditionals-prototype03.png)
+
+### Prototyping-events
+[Prototype01](./prototypes/events/events-prototype01/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/events/events-prototype01)
+
+![Prototype01](./images/events-prototype01.png)
+
+
+[Prototype02](./prototypes/events/events-prototype02/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/events/events-prototype02)
+
+![Prototype02](./images/events-prototype02.png)
+
+
+[Prototype03](./prototypes/events/events-prototype03/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/events/events-prototype03)
+
+![Prototype03](./images/events-prototype03.png)
