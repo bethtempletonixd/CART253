@@ -1,13 +1,12 @@
 /**
- * Title of Project
+ * Pink circles
  * Beth Templeton
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Draw pink circles where mouse is when pressed.
  */
 
 "use strict";
-
+//variables for circle colour and size
 let blob = {
     colour: "rgb(240, 19, 93)",
     size: 200
@@ -23,16 +22,16 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw is empty because mousePressed function is where the circles are drawn
 */
 function draw() {
 
 }
-
+//draw circles where mouse is when pressed
 function mousePressed() {
     drawBlob(mouseX, mouseY, blob.size);
 }
-
+//draw pink circle in different sizes 
 function drawBlob(x, y) {
     push();
     //noStroke();
