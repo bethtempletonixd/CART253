@@ -34,3 +34,7 @@ function drawCircle(x, y, size, colour) {
     ellipse(x, y, size);
     pop();
 }
+
+function drawRect() {
+    
+}
