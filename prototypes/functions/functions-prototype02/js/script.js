@@ -1,8 +1,8 @@
 /**
- * Pink and purple circles
+ * Pink, yellow and purple circles
  * Beth Templeton
  * 
- * Draw pink circles with smaller purple circle where mouse is when pressed.
+ * Draw pink circles with smaller purple circle and yellow stroke where mouse is when pressed.
  */
 
 "use strict";
@@ -31,7 +31,7 @@ function draw() {
 function mousePressed() {
     drawBlob(mouseX, mouseY, 100);
 }
-//draw pink circle with purple circle inside
+//draw pink circle with purple circle inside and yellow stroke
 function drawBlob(x, y, size) {
     push();
     stroke("#f6ff00")
