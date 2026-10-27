@@ -1,14 +1,13 @@
 /**
- * Title of Project
+ * Geometric print
  * Beth Templeton 
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Draw different colour circles and different stroke weight rectangles to make a geometric print.
  */
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * draw 500 by 500 pixel canvas and make background blue
 */
 function setup() {
     createCanvas(500, 500);
@@ -17,7 +16,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw multiple circles and rectangles in different sizes, positions, colours and stroke weights. 
 */
 function draw() {
     drawCircle(width/2, height/2, 200, "#f90b0b");
@@ -32,7 +31,7 @@ function draw() {
     drawRect(75, 340, 50, 150, 5);
     drawRect(270, 410, 50, 50, 1);
 }
-
+//draw circle
 function drawCircle(x, y, size, colour) {
     push();
     noStroke();
@@ -40,7 +39,7 @@ function drawCircle(x, y, size, colour) {
     ellipse(x, y, size);
     pop();
 }
-
+//draw rectangle/square
 function drawRect(x, y, w, h, sw) {
     push();
     stroke(0);
