@@ -1,6 +1,6 @@
 /**
  * Title of Project
- * Author Name
+ * Beth Templeton
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -9,10 +9,11 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * draw 500 by 500 pixel canvas with a white background
 */
 function setup() {
-
+    createCanvas(500, 500);
+    background(255);
 }
 
 
