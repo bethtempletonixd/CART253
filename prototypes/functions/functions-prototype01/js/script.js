@@ -22,6 +22,9 @@ function setup() {
 function draw() {
     drawCircle(width/2, height/2, 200, "#f90b0b");
     drawCircle(100, 300, 50, "#f50b97");
+    drawCircle(300, 150, 100, "#08e844");
+    drawCircle(400, 450, 150, "#ff8000");
+    drawCircle(100, 100, 100, "#ffdd02");
 }
 
 function drawCircle(x, y, size, colour) {
