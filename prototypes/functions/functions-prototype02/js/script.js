@@ -18,7 +18,7 @@ let blob = {
 */
 function setup() {
     createCanvas(500, 500);
-    background(0);
+    background(255);
 }
 
 
@@ -30,13 +30,14 @@ function draw() {
 }
 
 function mousePressed() {
-    drawBlob(mouseX, mouseY, size);
+    drawBlob(mouseX, mouseY, blob.size);
 }
 
-function drawBlob(x, y, size) {
+function drawBlob(x, y) {
     push();
+    //noStroke();
     fill(blob.colour);
-    ellipse(x, y, random(size));
+    ellipse(x, y, random(25, blob.size));
     pop();
 }
 
