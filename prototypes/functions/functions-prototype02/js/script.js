@@ -34,7 +34,8 @@ function mousePressed() {
 //draw pink circle with purple circle inside
 function drawBlob(x, y, size) {
     push();
-    //noStroke();
+    stroke("#f6ff00")
+    strokeWeight(5);
     fill(blob.outisdeColour);
     ellipse(x, y, size);
     pop();
