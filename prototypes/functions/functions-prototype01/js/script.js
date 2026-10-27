@@ -11,7 +11,8 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+    createCanvas(500, 500);
+    background("#0b70f5")
 }
 
 
@@ -19,5 +20,14 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    drawCircle(width/2, height/2, 200, "#f90b0b");
+    drawCircle(100, 300, 50, "#f50b97");
+}
 
+function drawCircle(x, y, size, colour) {
+    push();
+    noStroke();
+    fill(colour);
+    ellipse(x, y, size);
+    pop();
 }
