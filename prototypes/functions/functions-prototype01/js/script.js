@@ -31,8 +31,8 @@ function draw() {
     drawRect(75, 340, 50, 150, 5);
     drawRect(270, 410, 50, 50, 1);
 }
-//draw circle
-function drawCircle(x, y, size, colour) {
+//draw circle 
+function drawCircle(x, y, size, colour) { //control size, position and colour
     push();
     noStroke();
     fill(colour);
@@ -40,7 +40,7 @@ function drawCircle(x, y, size, colour) {
     pop();
 }
 //draw rectangle/square
-function drawRect(x, y, w, h, sw) {
+function drawRect(x, y, w, h, sw) { //control size, position and stroke weight 
     push();
     stroke(0);
     strokeWeight(sw);
