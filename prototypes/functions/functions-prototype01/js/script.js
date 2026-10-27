@@ -25,6 +25,8 @@ function draw() {
     drawCircle(300, 150, 100, "#08e844");
     drawCircle(400, 450, 150, "#ff8000");
     drawCircle(100, 100, 100, "#ffdd02");
+    
+    drawRect(100, 200, 100, 200, 3);
 }
 
 function drawCircle(x, y, size, colour) {
@@ -35,6 +37,11 @@ function drawCircle(x, y, size, colour) {
     pop();
 }
 
-function drawRect() {
-    
+function drawRect(x, y, w, h, sw) {
+    push();
+    stroke(0);
+    strokeWeight(sw);
+    noFill();
+    rect(x, y, w, h);
+    pop();
 }
