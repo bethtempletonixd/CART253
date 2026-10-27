@@ -1,15 +1,15 @@
 /**
- * Pink circles
+ * Pink and purple circles
  * Beth Templeton
  * 
- * Draw pink circles where mouse is when pressed.
+ * Draw pink circles with smaller purple circle where mouse is when pressed.
  */
 
 "use strict";
-//variables for circle colour and size
+//variables for circles colour 
 let blob = {
-    colour: "rgb(240, 19, 93)",
-    size: 200
+    outisdeColour: "rgb(240, 19, 93)",
+    insideColour: "#c50be6"
 }
 
 /**
@@ -29,14 +29,19 @@ function draw() {
 }
 //draw circles where mouse is when pressed
 function mousePressed() {
-    drawBlob(mouseX, mouseY, blob.size);
+    drawBlob(mouseX, mouseY, 100);
 }
-//draw pink circle in different sizes 
-function drawBlob(x, y) {
+//draw pink circle with purple circle inside
+function drawBlob(x, y, size) {
     push();
     //noStroke();
-    fill(blob.colour);
-    ellipse(x, y, random(25, blob.size));
+    fill(blob.outisdeColour);
+    ellipse(x, y, size);
+    pop();
+    push();
+    fill(blob.insideColour);
+    noStroke();
+    ellipse(x, y, size/2);
     pop();
 }
 
