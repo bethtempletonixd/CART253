@@ -49,10 +49,9 @@ function startOver(x, y) {
 }
 //change colour from red to blue when mouse is pressed and back to red when released
 function mousePressed() {
-    if(mouseIsPressed){
         shape.colour = shape.pressedColour;
-    }
-    else{
-        shape.colour = shape.colour;
-    }
+}
+
+function mouseReleased() {
+    shape.colour = "#ff0000"
 }
