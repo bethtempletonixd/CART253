@@ -5,7 +5,7 @@
  * Draw different colour circles and different stroke weight rectangles to make a geometric print.
  */
 
-
+//blob objects for circles 
 let blob1 = {
     x: 100,
     y: 300,
