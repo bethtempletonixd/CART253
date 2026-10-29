@@ -7,13 +7,22 @@
  */
 
 "use strict";
-let shape = {
-    x: 200,
-    y: 200,
+let shape01 = {
+    x: 250,
+    y: 250,
     w: 50,
     h: 200,
     colour:"#ff0000",
     pressedColour: "#001aff"
+}
+
+let shape02 = {
+    x: 250,
+    y: 250,
+    w: 200,
+    h: 50,
+    colour: "#ff0da2",
+    pressedColour: "#34e10d"
 }
 
 /**
@@ -29,11 +38,13 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    shape01(shape);
+    shapes(shape01);
+    shapes(shape02);
 }
 
-function shape01(object) {
+function shapes(object) {
     push();
+    noStroke();
     rectMode(CENTER);
     fill(object.colour);
     rect(object.x, object.y, object.w, object.h);
@@ -47,11 +58,13 @@ function startOver(x, y) {
     text('Redraw', x, y);
     pop();
 }
-//change colour from red to blue when mouse is pressed and back to red when released
+//change colour from red to blue when mouse is pressed
 function mousePressed() {
-        shape.colour = shape.pressedColour;
+        shape01.colour = shape01.pressedColour;
+        shape02.colour = shape02.pressedColour;
 }
-
+//change back to red when mouse is released
 function mouseReleased() {
-    shape.colour = "#ff0000"
+    shape01.colour = "#ff0000";
+    shape02.colour = "#ff0da2";
 }
