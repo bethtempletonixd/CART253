@@ -12,7 +12,8 @@ let shape = {
     y: 200,
     w: 50,
     h: 200,
-    colour:"#ff0000"
+    colour:"#ff0000",
+    pressedColour: "#001aff"
 }
 
 /**
@@ -29,13 +30,6 @@ function setup() {
 */
 function draw() {
     shape01(shape);
-    let d = dist(mouseX, mouseY, shape.x, shape.y);
-    if(d < shape.size/2){
-        fill(255);
-    }
-    else{
-        fill(shape.colour);
-    }
 }
 
 function shape01(object) {
@@ -52,4 +46,13 @@ function startOver(x, y) {
     fill(255);
     text('Redraw', x, y);
     pop();
+}
+//change colour from red to blue when mouse is pressed and back to red when released
+function mousePressed() {
+    if(mouseIsPressed){
+        shape.colour = shape.pressedColour;
+    }
+    else{
+        shape.colour = shape.colour;
+    }
 }
