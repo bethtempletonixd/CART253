@@ -14,7 +14,6 @@ let wordsIndex = 0;
 */
 function setup() {
     createCanvas(500, 500);
-    background(0);
 }
 
 
@@ -22,6 +21,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(0);
     push();
     textSize(32);
     fill(255);
