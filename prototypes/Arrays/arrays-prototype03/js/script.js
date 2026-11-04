@@ -6,7 +6,8 @@
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
-
+let square = undefined;
+const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -20,7 +21,7 @@ function setup() {
 */
 function draw() {
     background(0);
-    rectMode(CENTER);
+    textSize(20);
     fill(255);
-    rect(width/2, height/2, 200);
+    text(letters, random(width), random(height));
 }
