@@ -19,7 +19,7 @@ let balls2 = []; //array for ball2 objects
  * Create the canvas and the ball
  */
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500);
   ball1 = createBall01();
   ball2 = createBall02();
 }
