@@ -13,7 +13,8 @@
 */
 let ball1 = undefined; // Will create it with createBall()
 let ball2 = undefined;
-let balls =[];//array to hold ball objects
+let balls1 = [];//array to hold ball objects
+let balls2 = [];
 /**
  * Create the canvas and the ball
  */
@@ -76,23 +77,25 @@ function draw() {
    bounceBall02(ball2);
    drawBall02(ball2);
 
-  for(ball1 of balls){
+  for(ball1 of balls1){
     drawBall01(ball1);
     moveBall01(ball1);
     bounceBall01(ball1);
-
+  }
+    for(ball2 of balls2){
     drawBall02(ball2);
     moveBall02(ball2);
     bounceBall02(ball2);
+    }
 
-  }
+  
 }
 
 function mousePressed(){
     let newBall01 = createBall01();
-    balls.push(newBall01);
+    balls1.push(newBall01);
     let newBall02 = createBall02();
-    balls.push(newBall02);
+    balls2.push(newBall02);
 }
 
 /**
