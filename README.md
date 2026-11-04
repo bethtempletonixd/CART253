@@ -109,3 +109,24 @@ Link to my [Reflective Journal](./journal.md)
 [Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/functions/functions-prototype03)
 
 ![Prototype03](./images/functions-prototype03.png)
+
+### Prototyping-arrays
+[Prototype01](./prototypes/Arrays/arrays-prototype01/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/Arrays/arrays-prototype01)
+
+![Prototype01](./images/arrays-prototype01.png)
+
+
+[Prototype02](./prototypes/Arrays/arrays-prototype02/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/Arrays/arrays-prototype02)
+
+![Prototype02](./images/arrays-prototype02.png)
+
+
+[Prototype03](./prototypes/Arrays/arrays-prototype03/)
+
+[Code](https://github.com/bethtempletonixd/CART253/tree/main/prototypes/Arrays/arrays-prototype03)
+
+![Prototype03](./images/arrays-prototype03.png)
