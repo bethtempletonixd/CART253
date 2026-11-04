@@ -1,15 +1,15 @@
 /**
- * Title of Project
+ * Random letters
  * Beth Templeton
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Draws random letters at rando positions on screen with random colours. By pressing the mouse 
+ * you can add more letters.
  */
 
-let square = undefined;
+//array holding letters of the alphabet
 const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Draw canvas and background 
 */
 function setup() {
     createCanvas(500, 500);
@@ -19,17 +19,16 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draw individual letters at random positions and random colours on the canvas
 */
 function draw() {
-    //background(0);
     for(letter of letters){
-    textSize(20);
+    textSize(50);
     fill(random(255), random(255), random(255));
     text(letter, random(width), random(height));
     }
 }
-
+//add more letters to canvas
 function mousePressed() {
     redraw();
 }
