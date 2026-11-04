@@ -1,20 +1,20 @@
 /**
- * Title of Project
+ * Bouncing balls
  * Beth Templeton
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Using code from the class challenge. 
+ * Two different sized balls bounce about the screen and when you click the mouse another ball appears 
+ * with the same properties.
  */
 
-"use strict";
 
 /**
  * Variables for ball
 */
-let ball1 = undefined; // Will create it with createBall()
+let ball1 = undefined; 
 let ball2 = undefined;
-let balls1 = [];//array to hold ball objects
-let balls2 = [];
+let balls1 = [];//array to hold ball01 objects
+let balls2 = []; //array for ball2 objects
 /**
  * Create the canvas and the ball
  */
