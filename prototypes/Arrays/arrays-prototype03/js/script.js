@@ -13,6 +13,8 @@ const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 */
 function setup() {
     createCanvas(500, 500);
+    background(0);
+    noLoop();
 }
 
 
@@ -20,8 +22,14 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(0);
+    //background(0);
+    for(letter of letters){
     textSize(20);
-    fill(255);
-    text(letters, random(width), random(height));
+    fill(random(255), random(255), random(255));
+    text(letter, random(width), random(height));
+    }
+}
+
+function mousePressed() {
+    redraw();
 }
