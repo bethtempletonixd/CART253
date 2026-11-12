@@ -1,6 +1,6 @@
 /**
  * Terrible New Car
- * Pippin Barr
+ * Beth Templeton
  * 
  * A program to generate new car model names using dinosaurs.
  * 
