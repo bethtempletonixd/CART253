@@ -6,6 +6,8 @@
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 let slider;
+let grid = 10;
+let inset = 0 + grid/2;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
@@ -22,6 +24,10 @@ function setup() {
 function draw() {
     background(0);
     let rectSize = slider.value();
+    for(let x = 0; x < 10; x++){
+        for(let y = 0; y < 10; y++){
     rectMode(CENTER);
-    rect(250, 250, rectSize, rectSize);
+    rect(inset + x * grid, inset + y * grid, rectSize, rectSize);
+    }
+}
 }
