@@ -5,16 +5,16 @@
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
-let slider;
-const grid = 10;
-const inset = 0 + grid/2;
+const grid = 20;
+//const inset = 0 + grid/2;
+
+let shapes = [];
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(500, 500);
-    slider = createSlider(20, 200, 20);
 }
 
 
@@ -23,11 +23,14 @@ function setup() {
 */
 function draw() {
     background(0);
-    let rectSize = slider.value();
-    for(let x = 0; x < 10; x++){
-        for(let y = 0; y < 10; y++){
-    rectMode(CENTER);
-    rect(inset + x * grid, inset + y * grid, rectSize, rectSize);
+    // translate(width/2, height/2);
+    // translate(-width/2, -height/2);
+    //let rectSize = slider.value();
+    for(let x = 0; x < 50; x++){
+        for(let y = 0; y < 50; y++){
+   // rectMode(CENTER);
+    fill(255);
+    rect(x * grid, y * grid, 100, 100);
     }
 }
 }
