@@ -6,8 +6,8 @@
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 let slider;
-let grid = 10;
-let inset = 0 + grid/2;
+const grid = 10;
+const inset = 0 + grid/2;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
