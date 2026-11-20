@@ -10,8 +10,9 @@ const grid = 20;
 
 let squares = [];
 
-let cellSize = 100;
+let cellSize = 20;
 
+//let fillColour = rgb(0, 0, 0)
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -19,7 +20,7 @@ function setup() {
     createCanvas(500, 500);
     for(let x = 0; x < 50; x++){
         for(let y = 0; y < 50; y++){
-            squares.push(grid, cellSize);
+            squares.push(grid);
         }
     }
 }
@@ -36,4 +37,8 @@ function draw() {
     rect(x * grid, y * grid, cellSize, cellSize);
     }
 }
+}
+
+function mousePressed() {
+    
 }
