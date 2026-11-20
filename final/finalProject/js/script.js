@@ -8,13 +8,20 @@
 const grid = 20;
 //const inset = 0 + grid/2;
 
-let shapes = [];
+let squares = [];
+
+let cellSize = 100;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(500, 500);
+    for(let x = 0; x < 50; x++){
+        for(let y = 0; y < 50; y++){
+            squares.push(grid, cellSize);
+        }
+    }
 }
 
 
@@ -23,14 +30,10 @@ function setup() {
 */
 function draw() {
     background(0);
-    // translate(width/2, height/2);
-    // translate(-width/2, -height/2);
-    //let rectSize = slider.value();
     for(let x = 0; x < 50; x++){
         for(let y = 0; y < 50; y++){
-   // rectMode(CENTER);
     fill(255);
-    rect(x * grid, y * grid, 100, 100);
+    rect(x * grid, y * grid, cellSize, cellSize);
     }
 }
 }
