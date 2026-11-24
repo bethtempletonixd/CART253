@@ -5,8 +5,8 @@
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
-const grid = 20;
-const cellSize = 50;
+const grid = 25;
+const cellSize = 25;
 const cols = 25;
 const rows = 25;
 
