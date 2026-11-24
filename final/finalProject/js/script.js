@@ -33,12 +33,20 @@ function draw() {
     background(0);
     for(let x = 0; x < 50; x++){
         for(let y = 0; y < 50; y++){
-    fill(255);
+    //fill(255);
+    rectMode(CENTER);
     rect(x * grid, y * grid, cellSize, cellSize);
     }
 }
+console.log(d);
 }
 
 function mousePressed() {
-    
+    let d = dist(mouseX, mouseY, cellSize, cellSize);
+    if(d < cellSize){
+        fill(0);
+    }
+    else{
+        fill(255);
+    }
 }
