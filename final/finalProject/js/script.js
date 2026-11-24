@@ -5,10 +5,16 @@
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
-const grid = 20;
-const cellSize = 20;
+const grid = 25;
+const cellSize = 50;
 const cols = 25;
 const rows = 25;
+
+let fillColour = {
+    r: 255, 
+    g: 0,
+    b:0
+}
 
 let squares = [];
 
@@ -23,8 +29,7 @@ function setup() {
             squares.push({x: x*grid+cellSize/2, 
                 y: y*grid+cellSize/2,
                 width:cellSize,
-                height: cellSize,
-                colour: 255
+                height: cellSize
         });
         }
     }
@@ -36,12 +41,6 @@ function setup() {
 */
 function draw() {
     background(0);
-//     for(let x = 0; x < cols; x++){
-//         for(let y = 0; y < rows; y++){
-//     fill(squares.colour);
-//     rect(squares.x, squares.y, squares.width, squares.height);
-//     }
-// }
 rectMode(CENTER);
 drawGrid();
 //console.log(checkOverlap);
@@ -54,19 +53,14 @@ function drawGrid() {
     }
 }
 
-// function mousePressed() {
-//     let clickedColour = checkOverlap(squares.length, cellSize);
-//     if(clickedColour == true){
-//         fill(0);
-//     }
-//     else{
-//         fill(255);
-//     }
-// }
+function mousePressed() {
+    for(let s of squares){
+        if(pointInRect(mouseX, mouseY, s)){
+            s.colour = fillColour.r, fillColour.g, fillColour.b;
+        }
+    }
+}
 
-// function checkOverlap(rectA, rectB) {
-//   return (rectA.x + rectA.width/2 > rectB.x - rectB.width/2 &&
-//           rectA.x - rectA.width/2 < rectB.x + rectB.width/2 &&
-//           rectA.y + rectA.height/2 > rectB.y - rectB.height/2 &&
-//           rectA.y - rectA.height/2 < rectB.y + rectB.height/2);
-// }
+function pointInRect(px, py, r) {
+  return (px > r.x -r.width/2 && px < r.x + r.width/2 && py > r.y-r.height/2 && py < r.y+r.height/2);
+}
