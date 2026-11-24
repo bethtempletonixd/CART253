@@ -6,11 +6,11 @@
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 const grid = 20;
-//const inset = 0 + grid/2;
+const cellSize = 20;
+const cols = 25;
+const rows = 25;
 
 let squares = [];
-
-let cellSize = 20;
 
 //let fillColour = rgb(0, 0, 0)
 /**
@@ -18,9 +18,14 @@ let cellSize = 20;
 */
 function setup() {
     createCanvas(500, 500);
-    for(let x = 0; x < 50; x++){
-        for(let y = 0; y < 50; y++){
-            squares.push(grid);
+    for(let x = 0; x < cols; x++){
+        for(let y = 0; y < rows; y++){
+            squares.push({x: x*grid+cellSize/2, 
+                y: y*grid+cellSize/2,
+                width:cellSize,
+                height: cellSize,
+                colour: 255
+        });
         }
     }
 }
@@ -31,22 +36,37 @@ function setup() {
 */
 function draw() {
     background(0);
-    for(let x = 0; x < 50; x++){
-        for(let y = 0; y < 50; y++){
-    //fill(255);
-    rectMode(CENTER);
-    rect(x * grid, y * grid, cellSize, cellSize);
-    }
-}
-console.log(d);
+//     for(let x = 0; x < cols; x++){
+//         for(let y = 0; y < rows; y++){
+//     fill(squares.colour);
+//     rect(squares.x, squares.y, squares.width, squares.height);
+//     }
+// }
+rectMode(CENTER);
+drawGrid();
+//console.log(checkOverlap);
 }
 
-function mousePressed() {
-    let d = dist(mouseX, mouseY, cellSize, cellSize);
-    if(d < cellSize){
-        fill(0);
-    }
-    else{
-        fill(255);
+function drawGrid() {
+    for(let s of squares){
+        fill(s.colour);
+        rect(s.x, s.y, s.width, s.height);
     }
 }
+
+// function mousePressed() {
+//     let clickedColour = checkOverlap(squares.length, cellSize);
+//     if(clickedColour == true){
+//         fill(0);
+//     }
+//     else{
+//         fill(255);
+//     }
+// }
+
+// function checkOverlap(rectA, rectB) {
+//   return (rectA.x + rectA.width/2 > rectB.x - rectB.width/2 &&
+//           rectA.x - rectA.width/2 < rectB.x + rectB.width/2 &&
+//           rectA.y + rectA.height/2 > rectB.y - rectB.height/2 &&
+//           rectA.y - rectA.height/2 < rectB.y + rectB.height/2);
+// }
