@@ -31,26 +31,35 @@ I struggled this week to figure out how to implement arrays in my code properly.
 
 ## Final Prototype: week one
 
-I wasn’t sure what I wanted to make for my final prototype. When I found out that we could make anything for our final prototype, I found that very intimidating. As a creative person, it is very easy to think of so many ideas for what you could create for an open brief. I spent some time this week thinking of what I could make for my final prototype that would include as many of the coding skills we have learnt over the past weeks in class. 
+I wasn’t sure what I wanted to make for my final prototype. When I found out that we could make anything for our final prototype, I found that very intimidating. As a creative person, it is very easy to think of so many ideas for what you could create for an open brief. I spent some time this week thinking of what I could make for my final prototype that would include as many of the coding skills we have learnt over the past weeks in class.
+ 
 I started thinking about whether I wanted to make one bigger prototype or a series of slightly smaller prototypes. I thought it would be nice to have a bigger prototype that I can add to my portfolio and showcase what I have learnt in this class. In my course back at Glasgow School of Art, I am used to having projects that last about 2 weeks, where you spend those 2 weeks researching and working on your Processing sketch or whatever software we are working on for our project. I prefer this way of working where you can have more time to make something more substantial and impressive that would look good in your portfolio or could be developed to be exhibited. 
+
 For my final project, I think I would like to make some kind of drawing program with different shapes. I researched the work of Piet Mondrian, particularly his paintings of grids of different-shaped and coloured squares and rectangles. I was thinking of making a grid of squares and rectangles where the user can control the size of the shapes using a slider. 
+
 Another idea I had was inspired by one of my weekly prototypes where there are different-sized and coloured circles, squares and rectangles of different sizes and colours. Some of the shapes overlap, and some don’t have any fill but instead have a thicker black stroke. The prototype reminds me of an abstract painting like the work of Piet Mondrian. 
 ![Ideas](/images/ideas.jpeg)
 ![Mondrian](/images/mondrian.jpg)
 
 Firstly, I wanted to figure out how to implement a slider into my code to start controlling different variables. It was easier than I expected to add a slider to my code. I made a small prototype that included a white square in the centre of the canvas, and I could control the size of the square using a slider under the canvas. To create a slider in p5.js, you need to create a global slider variable and then draw the slider in setup. P5 has an inbuilt slider function which makes it easier to add it to my code. The createSlider function needs a minimum value, a maximum value and a starting value. 
+
 This week I spent more time thinking about what I wanted to make for my final prototype and less time coding, but now I have a more concrete idea of what I want to make I can get started on coding my final prototype. The next steps for me are to try to create a grid of squares and rectangles that I can control the size of with a slider. 
 
 ## Final Prototype: week two
 
 I decided to remove the slider from my code; it didn’t make sense since I mainly wanted to create different-sized squares in different colours. I realised I could achieve this by clicking on each square to change the colour. The user could click multiple squares to change the colour of each one, creating larger coloured squares made up of smaller squares that are all the same colour in a group. 
+
 I further thought about my idea and thought it could be a good idea to try to create a drawing game that uses the individual squares to act as each pixel of the drawing. The drawings created by the user would have the same style as old video games where the graphics look very pixelated compared to the crisp graphics you see in video games now. 
+
 I talked to Sabine last week about my idea and what I would need to do to create it in p5.js. She suggested using an array to create the grid so you can treat each square in the array as a separate object, which would make it easier to change its colour. Previously, I tried to avoid using arrays in my code as they scare me, and I find them hard to understand and implement. I think this project is good for testing my knowledge of how arrays work and testing my skills in how to properly use them in my code. 
+
 I went back to my code and converted the grid of squares I already made into an array. I added global variables to control the number of columns and rows in the array as well as the size of each square. I made a function for drawing the grid using a (for…of…) loop, which works the same as a for loop but with less code. I added the variables for the size of the grid, the position of the squares and the starting colour of the squares in setup, as they only get drawn once instead of 60 times a second in the draw loop. 
 ![screenshot](./images/finalPrototype-week2.png)
 
-I used the mousePressed() function to change the colour of the square once the mouse is inside the square. To check if the mouse was inside the square, I modified the code from the functions challenge where we checked if two squares were touching. I changed the code to compare the mouse position with each wall of the square to see if the mouse was inside the square. 
+I used the mousePressed() function to change the colour of the square once the mouse is inside the square. To check if the mouse was inside the square, I modified the code from the functions challenge where we checked if two squares were touching. I changed the code to compare the mouse position with each wall of the square to see if the mouse was inside the square.
+
 I had some issues with my code. In the mousePressed() function, I wanted the square to change colour from white to red, but for some reason it changes from white to black when the mouse is clicked inside it. I need Sabine’s help with why it isn’t changing to red when I have a variable for it to change colour to red. 
+
 My next steps is to fix the colour change and try to add multiple colours that the user can cycle through to create a drawing with multiple colours. 
 
 
