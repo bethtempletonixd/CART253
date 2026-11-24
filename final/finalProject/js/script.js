@@ -5,7 +5,7 @@
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
-const grid = 25;
+const grid = 20;
 const cellSize = 50;
 const cols = 25;
 const rows = 25;
@@ -20,16 +20,22 @@ let squares = [];
 
 //let fillColour = rgb(0, 0, 0)
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Setup size of grid and each position, colour and size of the individual
+ * squares in the squares array. 
 */
 function setup() {
     createCanvas(500, 500);
-    for(let x = 0; x < cols; x++){
-        for(let y = 0; y < rows; y++){
+    for(let x = 0; x < cols; x++){ //draw 25 columns of squares
+        for(let y = 0; y < rows; y++){ //draw 25 rows of squares
             squares.push({x: x*grid+cellSize/2, 
                 y: y*grid+cellSize/2,
                 width:cellSize,
-                height: cellSize
+                height: cellSize,
+                colour: {
+                    r: 255,
+                    g: 255,
+                    b: 255
+                }
         });
         }
     }
@@ -48,7 +54,7 @@ drawGrid();
 
 function drawGrid() {
     for(let s of squares){
-        fill(s.colour);
+        fill(s.colour.r, s.colour.g, s.colour.b);
         rect(s.x, s.y, s.width, s.height);
     }
 }
