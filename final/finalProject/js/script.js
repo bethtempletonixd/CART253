@@ -16,7 +16,16 @@ let fillColour = {
     b:0
 }
 
+let fillGreen = {
+    r: 0,
+    g: 255, 
+    b: 0
+}
+
+let button;
+
 let squares = [];
+let paintColour = []
 
 //let fillColour = rgb(0, 0, 0)
 /**
@@ -39,6 +48,9 @@ function setup() {
         });
         }
     }
+    let button = createButton('Clear canvas');
+    button.position(275, 75);
+    button.mousePressed(repaint);
 }
 
 
@@ -50,6 +62,8 @@ function draw() {
 rectMode(CENTER);
 drawGrid();
 //console.log(checkOverlap);
+fill('red');
+circle(250, 250, 200);
 }
 
 function drawGrid() {
@@ -59,10 +73,27 @@ function drawGrid() {
     }
 }
 
+function repaint() {
+    //drawGrid();
+    // let bg = background(0);
+    // background(bg);
+    fill(0, 0, 255);
+    circle(250, 250, 200);
+}
+
 function mousePressed() {
     for(let s of squares){
         if(pointInRect(mouseX, mouseY, s)){
-            s.colour = fillColour.r, fillColour.g, fillColour.b;
+            s.colour = {r:fillColour.r, g:fillColour.g, b:fillColour.b};
+            console.log(s.colour);
+        }
+    }
+}
+
+function keyPressed () {
+    for(let s of squares){
+        if(pointInRect(mouseX, mouseY, s)){
+            s.colour = {r:fillGreen.r, g:fillGreen.g, b:fillGreen.b};
         }
     }
 }
