@@ -25,7 +25,7 @@ let fillGreen = {
 let button;
 
 let squares = [];
-let paintColour = []
+let paintColour = ['black', 'red', 'green', 'blue', 'magenta', 'pink', 'yellow', 'orange'];
 
 //let fillColour = rgb(0, 0, 0)
 /**
@@ -62,8 +62,6 @@ function draw() {
 rectMode(CENTER);
 drawGrid();
 //console.log(checkOverlap);
-fill('red');
-circle(250, 250, 200);
 }
 
 function drawGrid() {
