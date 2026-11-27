@@ -24,8 +24,8 @@ let fillGreen = {
 
 let button;
 
-let squares = [];
-let paintColour = ['black', 'red', 'green', 'blue', 'magenta', 'pink', 'yellow', 'orange'];
+const squares = [];
+const paintColour = ['black', 'red', 'green', 'blue', 'magenta', 'pink', 'yellow', 'orange'];
 let paintColourIndex = 0;
 
 //let fillColour = rgb(0, 0, 0)
@@ -41,16 +41,13 @@ function setup() {
                 y: y*grid+cellSize/2,
                 width:cellSize,
                 height: cellSize,
-                colour: {
-                    r: 255,
-                    g: 255,
-                    b: 255
-                }
+                colour: 'white'
+                
         });
         }
     }
     button = createButton('Clear canvas');
-    button.position(275, 75);
+    button.position(580, 570);
     button.mousePressed(repaint);
 }
 
@@ -67,31 +64,43 @@ drawGrid();
 
 function drawGrid() {
     for(let s of squares){
-        fill(s.colour.r, s.colour.g, s.colour.b);
+        fill(s.colour);
         rect(s.x, s.y, s.width, s.height);
     }
 }
 
 function repaint() {
     for(let s of squares){
-        s.colour = {r:255, g:255, b:255}
+        s.colour = 'white';
     }
 }
 
 function mousePressed() {
     for(let s of squares){
         if(pointInRect(mouseX, mouseY, s)){
-            s.colour = {r:fillColour.r, g:fillColour.g, b:fillColour.b};
+            s.colour = paintColour[paintColourIndex];
             console.log(s.colour);
         }
     }
 }
 
 function keyPressed () {
+    // for(let s of squares){
+    //     if(pointInRect(mouseX, mouseY, s)){
+    //         s.colour = {r:fillGreen.r, g:fillGreen.g, b:fillGreen.b};
+    //     }
+    // }
+    // colourChange();
+    paintColourIndex = (paintColourIndex + 1) % paintColour.length;
+    // if(paintColourIndex >= paintColour.length){
+    //     paintColourIndex = 0;
+    // }
+}
+
+function colourChange() {
+    let currentColour = paintColour[paintColourIndex];
     for(let s of squares){
-        if(pointInRect(mouseX, mouseY, s)){
-            s.colour = {r:fillGreen.r, g:fillGreen.g, b:fillGreen.b};
-        }
+        s.colour = currentColour;
     }
 }
 
