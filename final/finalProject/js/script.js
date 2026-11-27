@@ -26,6 +26,7 @@ let button;
 
 let squares = [];
 let paintColour = ['black', 'red', 'green', 'blue', 'magenta', 'pink', 'yellow', 'orange'];
+let paintColourIndex = 0;
 
 //let fillColour = rgb(0, 0, 0)
 /**
@@ -48,7 +49,7 @@ function setup() {
         });
         }
     }
-    let button = createButton('Clear canvas');
+    button = createButton('Clear canvas');
     button.position(275, 75);
     button.mousePressed(repaint);
 }
@@ -72,11 +73,9 @@ function drawGrid() {
 }
 
 function repaint() {
-    //drawGrid();
-    // let bg = background(0);
-    // background(bg);
-    fill(0, 0, 255);
-    circle(250, 250, 200);
+    for(let s of squares){
+        s.colour = {r:255, g:255, b:255}
+    }
 }
 
 function mousePressed() {
